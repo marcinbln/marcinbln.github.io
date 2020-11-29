@@ -10,24 +10,25 @@
      }
 
      a:link {
-       color: black;
+     color: #005b75;
+
 
      }
 
      /* visited link */
      a:visited {
-       color: black;
+       color: #005b75;
+
      }
 
      /* mouse over link */
      a:hover {
-       color: black;
-       text-decoration: underline;
+       color: blue;
      }
 
      /* selected link */
      a:active {
-       color: black;
+       color: #005b75;
      }
 
      body {
@@ -170,6 +171,9 @@ Typography
        height: auto;
      }
 
+      .section-title {
+       color: #005b75;
+     }
 
      .card {
        background: white;
