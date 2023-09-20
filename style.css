@@ -212,6 +212,7 @@ Typography
        display: flex;
        flex-wrap: wrap;
        justify-content: center;
+       margin-bottom: 4em;
      }
 
      .card {
@@ -236,8 +237,50 @@ Typography
        padding: 0 1em;
      }
 
+     .centered-title {
+         text-align: center;
+     }
+
+     h1.section-title {
+         margin-bottom: 0;
+     }
+
+
      @media screen and (min-width: 52em) {
        .centered {
          max-width: 48em;
        }
      }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .grid-item-content {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .grid-item-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+    }
+
+    .grid-item-content video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+        background-color: black;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
