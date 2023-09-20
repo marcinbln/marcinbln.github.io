@@ -11,14 +11,11 @@
 
      a:link {
      color: #005b75;
-
-
      }
 
      /* visited link */
      a:visited {
        color: #005b75;
-
      }
 
      /* mouse over link */
@@ -33,7 +30,6 @@
 
      body {
        background: hsl(0, 0%, 90%);
-
      }
 
      /*--------------------------------------------------------------
@@ -269,6 +265,7 @@ Typography
         height: auto;
         display: block;
         border: none;
+        cursor: pointer;
     }
 
     .grid-item-content video {
@@ -283,4 +280,29 @@ Typography
         content: "";
         display: table;
         clear: both;
+    }
+
+    /* CSS for the image overlay */
+    .enlarged-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* CSS for the enlarged image */
+    .enlarged-image {
+        max-width: 20%; /* Adjust the maximum width as needed */
+        max-height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
     }
